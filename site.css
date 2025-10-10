@@ -1,3 +1,8 @@
 BODY{background: #cfc1e8;padding: 50px;}
 H1, H2, H3{color: #381042; font-family: sans-serif;}
 #mypic {width: 200px;}
+h2{font-style: italic;}
+.navigation {
+display: flex;
+gap: 20px;
+}
