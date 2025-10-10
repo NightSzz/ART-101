@@ -1,0 +1,35 @@
+
+body {background: #e6e0f8;}
+
+.test-div {background: #c5bfee;
+padding: 20px;
+margin: 20px;
+color:#fbf0fe
+}
+
+div.test-div h2 {color: #a59dd9;}
+
+.special{color:rgb(234, 213, 234);}
+
+.test-div:hover{background: #54437e;}
+
+h1, h2, h3 {text-decoration: underline;}
+
+h2{color: rgb(164, 132, 227);}
+
+p.special {color: #857ac9; font-weight: bold;}
+
+button.special { background: #857ac9;}
+
+#apples {
+    display: flex;
+flex-wrap: wrap;}
+
+#apples DIV {
+    width: 200px;
+}
+
+#oranges {
+    display: flex;
+    flex-direction: column;
+}
