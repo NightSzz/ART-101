@@ -1,0 +1,35 @@
+
+body {background: #88acc8;}
+
+.test-div {background: #6690aa;
+padding: 20px;
+margin: 20px;
+color:#46758d
+}
+
+h2{background-image: url(images/kitty.jpg) ;}
+p1, p2, p3 {background-image: url(images/kitty.jpg);}
+div.test-div h2 {color: #487889;}
+
+.special{color:rgb(43, 108, 100);}
+
+.test-div:hover{background: #183e4d;}
+
+p.special {color: #1d4757; font-weight: bold;}
+
+.container
+{
+display: flex;
+flex-wrap: wrap;
+}
+
+#boom DIV 
+{
+width: 200px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
