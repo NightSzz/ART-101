@@ -6,7 +6,7 @@ let totalNumber = 0;
 $("#the-button").click( function(){
 
      totalNumber = totalNumber + 3;
-
+   
      let sentence = "You said hello ";
      let totalNumbers = sentence + totalNumber + " times";
 

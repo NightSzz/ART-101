@@ -1,0 +1,28 @@
+.zoinks {
+    background-color: rgb(167, 136, 173);
+    border: 2px solid rgb(133, 81, 137);
+    border-radius: 12px;
+    color: rgb(124, 47, 134);
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.zoinks:hover {
+    background-color: rgb(155, 205, 157);
+    color: rgb(83, 146, 109);
+    border: 2px solid rgb(56, 112, 73);
+}
+
+.the-hello {
+    color: rgb(124, 47, 134);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.the-hello:hover {
+    color: rgb(83, 146, 109);}
+
+    body {
+    background-color: rgb(240, 230, 250);
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+}
