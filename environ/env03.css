@@ -1,0 +1,10 @@
+BODY{background-image: url(mango.jpg); background-repeat: no-repeat; 
+    background-attachment: fixed; background-size: cover;}
+H1, H2, H3{color: #fdf1ea; font-family:monospace;
+background-color: #bd612f;}
+p{color: #ffdce0;background-color: #d05f22; font-family:monospace;}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
