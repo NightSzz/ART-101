@@ -4,6 +4,9 @@
 $("#output").append("<h2> and then...</h2>");
 $("#output").append("<p> the mango grew to be known as the best warrior mango in the kingdom of mangoes. </p>");
 //You can use multiple DIVs with different IDs for different bits of content.
+
 //Observe how HTML tags are inserted into JS variables before they are printed. Use it!
+
 //You can also CSS-style those DIVs using the same IDs for CSS selectors!
+
 

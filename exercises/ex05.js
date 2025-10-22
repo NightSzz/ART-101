@@ -3,7 +3,7 @@ let colors = ["Orchid", "Coral", "HotPink", "Plum"]; // new line tp add
 
 $("#dumb").click(function () {
 
-     let reminder = count % colors.length; 
+    let reminder = count % colors.length; 
      count = reminder;
     $("#dumb").html( "Clicks: " + count + " Color: " + colors[count] ); 
    // new line tp add
@@ -13,4 +13,6 @@ $("#dumb").click(function () {
 
     count = count + 1;
 
+    if (count == 4) {count = 0;} //new line
+  
 });

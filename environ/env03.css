@@ -1,6 +1,6 @@
 BODY{background-image: url(mango.jpg); background-repeat: no-repeat; 
     background-attachment: fixed; background-size: cover;}
-H1, H2, H3{color: #fdf1ea; font-family:monospace;
+H1, H2 {color: #fdf1ea; font-family:monospace;
 background-color: #bd612f;}
 p{color: #ffdce0;background-color: #d05f22; font-family:monospace;}
  
@@ -9,8 +9,10 @@ H1:hover {
   background-color: #ffcc00;
 }
 h2:hover,p:hover{color: #000000;
-background-color: #ffcc00;
+background-color: #ffa600;
 }
+.output {background-color: rgb(34, 64, 14)}
+
 .images {
   display: flex;
   gap: 20px;
