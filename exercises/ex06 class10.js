@@ -53,14 +53,25 @@ $("#needy-button").click(function () {
    if (colorCount == 4) { colorCount = 0; }
 });
 
-//audio play/pause
+// Get references to the audio and button elements
 const myAudio = document.getElementById('myAudio');
 const playPauseButton = document.getElementById('playPauseButton');
 
-playPauseButton.addEventListener('click', function() {
+// Function to toggle play/pause
+function togglePlayPause() {
     if (myAudio.paused) {
         myAudio.play();
+        playPauseButton.textContent = 'Pause'; // Update button text
     } else {
         myAudio.pause();
+        playPauseButton.textContent = 'Play'; // Update button text
     }
+}
+
+// Add an event listener to the button
+playPauseButton.addEventListener('click', togglePlayPause);
+
+// Optional: Update button text when the song ends
+myAudio.addEventListener('ended', () => {
+    playPauseButton.textContent = 'Play';
 });
