@@ -43,15 +43,15 @@ background-color: #ffa600;
 }
 
 #myRock {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    position: relative; /* Required for 'left' and 'top' animation */
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: monospace;
-    border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  position: relative; 
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: monospace;
+  border-radius: 50%;
 }
