@@ -30,8 +30,6 @@ $(function () {
     });
 });
 
-//1. Create a set of html, css, and js files. Use the previous lab achievements. 
-
 //2. Using jQuery, create an interactive event-tied relation in your environment. 
 // For example, if user clicks one element, another disappears, or appears, or changes size. 
 // Go beyond what we have already did in classes and labs. 
