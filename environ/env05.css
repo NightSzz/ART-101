@@ -1,0 +1,57 @@
+BODY{background-image: url(mango.jpg); background-repeat: no-repeat; 
+    background-attachment: fixed; background-size: cover;}
+H1, H2 {color: #fdf1ea; font-family:monospace;
+background-color: #bd612f;}
+p{color: #ffdce0;background-color: #d05f22; font-family:monospace;}
+ 
+H1:hover {
+  color: #000000;
+  background-color: #ffcc00;
+}
+h2:hover,p:hover{color: #000000;
+background-color: #ffa600;
+}
+.output {background-color: rgb(34, 64, 14)}
+
+.background-button {
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #19572c;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.other-button {
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #19572c;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.images {
+  display: flex;
+  gap: 8px;
+}
+.funky {
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #19572c;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#myRock {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    position: relative; /* Required for 'left' and 'top' animation */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: monospace;
+    border-radius: 5px;
+}
