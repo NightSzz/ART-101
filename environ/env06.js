@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#pFeed").hover(function(){
-    alert("Thanks for reading!");
+    alert("Thank you for reading.");
   },
   function(){
     alert("Wish goodmango luck below!");
