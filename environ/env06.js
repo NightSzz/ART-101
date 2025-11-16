@@ -40,10 +40,10 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#pFeed").hover(function(){
-    alert("Your delivering encouragement!");
+    alert("These are the mango folk!");
   },
   function(){
-    alert("Thanks for the encouragement!");
+    alert("Wish goodmango luck!");
   }); 
 });
 
