@@ -16,10 +16,34 @@
 }
 
 #creature-list>DIV {
-   background: pink;
+   background: rgb(208, 208, 209);
    width: 100px;
    height: 100px;
    display: flex;
    justify-content: center;
    align-items: center;
+   border-radius: 50%;
 }
+#creature-form DIV {
+    margin-bottom: 10px;
+}
+
+#creature-list>DIV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.creature-body {
+    background: rgb(196, 192, 196);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.eye { height: 18px; width: 10px; border: 2px solid #000; 
+   border-radius: 10px; background: #fff;}
