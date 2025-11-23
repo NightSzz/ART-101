@@ -13,61 +13,69 @@ $("#output").append("<p> the mango grew to be known as the best warrior mango in
 const img1 = "chillmango.jpg";
 const img2 = "mango.jpg";
 
-function changeBackground(imagePath) {
+function changeBodyBackground(imagePath) {
     $("body").css("background-image", `url(${imagePath})`);
 }
+function getImagePathFromElement(el, defaultImg = img1) {
+  const $el = $(el);
+  let imagePath = $el.data("image");
+  if (!imagePath) {
+    imagePath = $el.attr("id") || defaultImg;
+  }
+  return imagePath || defaultImg;
+}
 
-$(function () {
-    //two buttons to change background images
-    $(".background-button, .other-button").click(function () {
-        let imagePath = $(this).data("image"); 
-        if (!imagePath) {
-            //The button's ID
-            imagePath = this.id || img1;
-        }
-        if (!imagePath) imagePath = img1;
-        changeBackground(imagePath);
+function attachInputHighlight(selector = "input", focusColor = "orange", blurColor = "green") {
+  $(selector).focus(function(){
+    $(this).css("background-color", focusColor);
+  });
+  $(selector).blur(function(){
+    $(this).css("background-color", blurColor);
+  });
+}
+
+function attachHoverMessages(selector = "#pFeed", enterMsg = "Thank you for reading.", leaveMsg = "Wish goodmango luck below!") {
+  $(selector).hover(function(){
+    alert(enterMsg);
+  }, function(){
+    alert(leaveMsg);
+  });
+}
+
+function initEnv06() {
+  // two buttons 
+  $(".background-button, .other-button").click(function () {
+    const imagePath = getImagePathFromElement(this);
+    changeBodyBackground(imagePath);
+  });
+  // blur highlighting
+  attachInputHighlight();
+  // pFeed hover
+  attachHoverMessages();
+
+  // myRock animation 
+  $("#myRock").on("click", function() {
+    $(this).animate({
+      left: '200px', 
+      opacity: '0.5', 
+      width: '150px', 
+      height: '150px' 
+    }, 1000, function() {
+      // Callback 
+      $(this).animate({
+        left: '0px', 
+        opacity: '1', 
+        width: '100px', 
+        height: '100px' 
+      }, 1000);
     });
-});
-$(document).ready(function(){
-  $("input").focus(function(){
-    $(this).css("background-color", "orange");
   });
-  $("input").blur(function(){
-    $(this).css("background-color", "green");
-  });
-});
+}
 
-$(document).ready(function(){
-  $("#pFeed").hover(function(){
-    alert("Thank you for reading.");
-  },
-  function(){
-    alert("Wish goodmango luck below!");
-  }); 
-});
+$(initEnv06);
 
 //2. Using jQuery, create an interactive event-tied relation in your environment. 
 // For example, if user clicks one element, another disappears, or appears, or changes size. 
 // Go beyond what we have already did in classes and labs. 
 // Use .hover()Links to an external site. event. for example. 
 // Study jquery .animate() method.
-
-$(document).ready(function() {
-    $("#myRock").on("click", function() {
-        $(this).animate({
-            left: '200px', 
-            opacity: '0.5', 
-            width: '150px', 
-            height: '150px' 
-        }, 1000, function() {
-            // Callback 
-            $(this).animate({
-                left: '0px', 
-                opacity: '1', 
-                width: '100px', 
-                height: '100px' 
-            }, 1000);
-        });
-    });
-});

@@ -13,6 +13,7 @@
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
    <!-- Link to external JavaScript file -->
    <script src="creature.js" DEFER></script>
+   <script src="wander.js" DEFER></script>
 </head>
 
 <body>
@@ -24,9 +25,10 @@
       <div>Name: <input id="crName" type="text" maxlength="10"> </div>
       <div>Color: <input id="crColor" type="color"> </div>
       <div>Number of eyes: <input id="crEyesNum" type="number" max="5" min="0"> </div>
-      <div>Feature: <input id = "crFeature" type= "text"> </div>
-      <button id="add-creature">Let it roam!</button>
-   </div>
+   <div><input type="checkbox" id="crRandom" value="yes"> <label for="crRandom">Randomize!</label></div>
+<button id="add-creature">Let it roam!</button>
+<button id="start-wander">Start wandering</button>
+<button id="stop-wander">Stop wandering</button>
 
    <div id="creature-list">Creatures list will be there: </div>
 

@@ -8,18 +8,28 @@
    margin-bottom: 20px;
 }
 
+/* container where creatures will wander */
 #creature-list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 20px;
+   position: relative;
+   width: 300px;
+   height: 500px;
    margin: 50px;
+   border: 2px solid rgba(0,0,0,0.08);
+   background: #f1f1f1;
+   overflow: hidden;
 }
 
-#creature-list>DIV {
-   background: rgb(208, 208, 209);
+h1 {font-family:'Lucida Sans'; color: rgb(86, 0, 139);}
+
+BODY { background-color:rgb(177, 160, 221);}
+
+/* each creature is absolutely positioned inside #creature-list */
+.creature {
+   position: absolute;
    width: 100px;
    height: 100px;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    border-radius: 50%;
@@ -29,10 +39,10 @@
 }
 
 #creature-list>DIV {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .creature-body {
